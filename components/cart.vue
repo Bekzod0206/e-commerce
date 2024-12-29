@@ -22,7 +22,6 @@ const currentProductsArr = reactive<Array<ProductData>>([]);
 watch(
   () => currentUser,
   (newValue) => {
-    console.log('hello watcher')
     currentProductsArr.splice(0, currentProductsArr.length);
     if (newValue.cartProducts.length > 0) {
       totalProducts.forEach((item) => {

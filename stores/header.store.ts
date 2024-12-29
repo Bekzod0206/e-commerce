@@ -14,7 +14,7 @@ export const useHeaderStore = defineStore('header', {
   },
 
   actions: {
-    set(data: Partial<HeaderState>) {
+    set(data: HeaderState) {
       this.$patch(data);
     },
     clear() {

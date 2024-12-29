@@ -33,6 +33,12 @@ watch(
           }
         }
       });
+    }else{
+      totalProducts.forEach((item) => {
+        if(offerProductsArr.length < 4){
+          offerProductsArr.push(item)
+        }
+      });
     }
   },
   { deep: true, immediate: true }

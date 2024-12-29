@@ -1,13 +1,21 @@
 <script setup lang="ts">
 import { appStore, googlePlay, qrCode } from '~/assets/img';
 
+const router = useRouter()
+const headerStore = useHeaderStore()
+const { currentHeader } = useHeaderStore()
 const emailValue = ref('')
+
+const handleRouter = (status: string): void => {
+  headerStore.set({status})
+  router.push(status)
+}
+
 </script>
 
 <template>
 
   <div class="w-full bg-black text-white flex flex-col items-center justify-center p-10 box-border">
-    <!-- mt-[30vh] -->
     <section class="container grid grid-cols-5 gap-4">
 
       <div class="content-col">
@@ -32,21 +40,19 @@ const emailValue = ref('')
 
       <div class="content-col">
         <p class="col-header-text">Account</p>
-        <!-- Need to set nuxtlink to drespective pages -->
-        <p>My Account</p>
-        <p>Login / Register</p>
-        <p>Cart</p>
-        <p>Wishlist</p>
-        <p>Shop</p>
+        <p class="cursor-pointer" @click="handleRouter('account')">My Account</p>
+        <p class="cursor-pointer" @click="handleRouter('auth')">Login / Register</p>
+        <p class="cursor-pointer" @click="handleRouter('cart')">Cart</p>
+        <p class="cursor-pointer" @click="handleRouter('wishlist')">Wishlist</p>
+        <p class="cursor-pointer" @click="handleRouter('all-products')">Shop</p>
       </div>
 
       <div class="content-col">
         <p class="col-header-text">Quick Link</p>
-        <!-- Need to set nuxtlink to drespective pages -->
-        <p>Privacy Policy</p>
-        <p>Terms of Use</p>
-        <p>FAQ</p>
-        <p>Contact</p>
+        <p class="cursor-pointer">Privacy Policy</p>
+        <p class="cursor-pointer">Terms of Use</p>
+        <p class="cursor-pointer">FAQ</p>
+        <p class="cursor-pointer">Contact</p>
       </div>
 
       <div class="content-col">
@@ -60,10 +66,18 @@ const emailValue = ref('')
           </div>
         </div>
         <div class="flex gap-4">
-          <Icon icon="ri:facebook-line" width="25" />
-          <Icon icon="tabler:brand-twitter" width="25" />
-          <Icon icon="mdi:instagram" width="25" />
-          <Icon icon="akar-icons:linkedin-v2-fill" width="25" />
+          <el-link href="https://facebook.com" target="_blank">
+            <Icon icon="ri:facebook-line" width="25" />
+          </el-link>
+          <el-link href="https://twitter.com" target="_blank">
+            <Icon icon="tabler:brand-twitter" width="25" />
+          </el-link>
+          <el-link href="https://instagram.com" target="_blank">
+            <Icon icon="mdi:instagram" width="25" />
+          </el-link>
+          <el-link href="https://linkedin.com" target="_blank">
+            <Icon icon="akar-icons:linkedin-v2-fill" width="25" />
+          </el-link>
         </div>
       </div>
 

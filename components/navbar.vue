@@ -16,6 +16,7 @@ if(currentUser.name){
 
 const activeIndex = ref('home')
 activeIndex.value = currentHeader
+console.log(currentHeader, 'currentHeader in navbar')
 const searchVal = ref('')
 
 const handleSelect = (status: string): void => {
@@ -62,6 +63,7 @@ const handleUserMenu = (status: string): void => {
     authStore.clear()
     headerStore.clear()
     route.push('/login')
+    activeIndex.value = ''
     return
   }
   route.push('/account')
