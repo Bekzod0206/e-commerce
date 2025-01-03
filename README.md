@@ -1,3 +1,9 @@
+# E-Commerce Project
+
+🚀 **Live Demo**: [https://bekzod0206.github.io/e-commerce/login/] (https://bekzod0206.github.io/e-commerce/login/)
+
+Check out the live version of the project by clicking the link above!
+
 # Nuxt Minimal Starter
 
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
