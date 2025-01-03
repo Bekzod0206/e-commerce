@@ -16,7 +16,7 @@ if(currentUser.name){
 
 const activeIndex = ref('home')
 activeIndex.value = currentHeader
-console.log(currentHeader, 'currentHeader in navbar')
+// console.log(currentHeader, 'currentHeader in navbar')
 const searchVal = ref('')
 
 const handleSelect = (status: string): void => {

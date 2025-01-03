@@ -15,7 +15,7 @@ const handleRouter = (status: string): void => {
 
 <template>
 
-  <div class="w-full bg-black text-white flex flex-col items-center justify-center p-10 box-border">
+  <div class="w-full bg-black text-white flex flex-col items-center justify-center p-10 box-border mt-[50px]">
     <section class="container grid grid-cols-5 gap-4">
 
       <div class="content-col">

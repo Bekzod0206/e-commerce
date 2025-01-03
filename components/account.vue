@@ -83,10 +83,10 @@ const handleBreadCrumb = () => {
               <NuxtLink to="/account">My Profile</NuxtLink>
             </p>
             <p>
-              <NuxtLink to="/address-book">Address Book</NuxtLink>
+              <NuxtLink to="/">Address Book</NuxtLink>
             </p>
             <p>
-              <NuxtLink to="/payment-option">My payment options</NuxtLink>
+              <NuxtLink to="/">My payment options</NuxtLink>
             </p>
           </span>
         </span>
@@ -94,10 +94,10 @@ const handleBreadCrumb = () => {
           <p class="header-text">My Orders</p>
           <span class="sub-section-text">
             <p>
-              <NuxtLink to="/return">My Returns</NuxtLink>
+              <NuxtLink to="/">My Returns</NuxtLink>
             </p>
             <p>
-              <NuxtLink to="/cancellation">My Cancellations</NuxtLink>
+              <NuxtLink to="/">My Cancellations</NuxtLink>
             </p>
           </span>
         </span>
