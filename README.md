@@ -1,6 +1,6 @@
 # E-Commerce Project
 
-🚀 **Live Demo**: [https://bekzod0206.github.io/e-commerce/login/] (https://bekzod0206.github.io/e-commerce/login/)
+🚀 **Live Demo**: [https://bekzod0206.github.io/e-commerce/] (https://bekzod0206.github.io/e-commerce/)
 
 Check out the live version of the project by clicking the link above!
 
