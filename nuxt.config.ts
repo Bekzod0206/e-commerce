@@ -18,4 +18,10 @@ export default defineNuxtConfig({
     '~/plugins/element-plus.ts',
     '~/plugins/element-icons.ts',
   ],
+  app: {
+    baseURL: '/e-commerce/'
+  },
+  nitro: {
+    preset: 'static'
+  }
 })
