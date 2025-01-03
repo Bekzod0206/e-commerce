@@ -1,1 +1,0 @@
-import{_ as c,o as _,c as r,a as o,b as e,W as l,X as d,Y as p,Z as u}from"./elyZM39j.js";const i={},m={class:"w-full min-h-full"};function f(t,b){const n=d,s=p,a=u;return _(),r("div",m,[o("div",null,[e(n),e(s,{class:"sticky top-0 bg-white z-50 pb-5 border-b-[1px]"}),o("div",null,[l(t.$slots,"default")])]),o("div",null,[e(a)])])}const v=c(i,[["render",f]]);export{v as default};

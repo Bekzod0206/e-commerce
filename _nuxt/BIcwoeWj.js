@@ -1,0 +1,1 @@
+import{_ as e}from"./DXNQ3Vmt.js";import{d as t,o as n,c as a,b as r}from"./CxxHAsrM.js";/* empty css        *//* empty css        */const u=t({__name:"login",setup(s){return(c,_)=>{const o=e;return n(),a("div",null,[r(o,{"page-status":"log-in"})])}}});export{u as default};

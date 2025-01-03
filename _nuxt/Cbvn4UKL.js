@@ -1,0 +1,1 @@
+import{K as o}from"./CxxHAsrM.js";const r={product:[]},e=o("product",{state:()=>r,getters:{currentProduct:t=>t.product},actions:{set(t){this.$patch({product:t})},clear(){this.$patch(r)}}});export{e as u};
